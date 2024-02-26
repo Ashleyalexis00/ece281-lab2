@@ -104,17 +104,17 @@ begin
         w_sw <= x"9"; wait for 10 ns;
             assert w_seg = "0011000" report "error on x9" severity failure;
         w_sw <= x"A"; wait for 10 ns;
-            assert w_seg = "0001000" report "error on x10" severity failure;
+            assert w_seg = "0001000" report "error on xA" severity failure;
         w_sw <= x"B"; wait for 10 ns;
-            assert w_seg = "0000011" report "error on x11" severity failure;
+            assert w_seg = "0000011" report "error on xB" severity failure;
         w_sw <= x"C"; wait for 10 ns;
-            assert w_seg = "0100111" report "error on x12" severity failure;
+            assert w_seg = "0100111" report "error on xC" severity failure;
         w_sw <= x"D"; wait for 10 ns;
-            assert w_seg = "0100001" report "error on x13" severity failure;
+            assert w_seg = "0100001" report "error on xD" severity failure;
         w_sw <= x"E"; wait for 10 ns;
-            assert w_seg = "0000110" report "error on x14" severity failure;
+            assert w_seg = "0000110" report "error on xE" severity failure;
         w_sw <= x"F"; wait for 10 ns;
-            assert w_seg = "0001110" report "error on x15" severity failure;
+            assert w_seg = "0001110" report "error on xF" severity failure;
         -- Remaining test cases
           
           wait; -- wait forever
